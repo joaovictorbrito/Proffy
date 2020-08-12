@@ -20,8 +20,8 @@ server
 .use(express.static("public_html"))
 // rotas de aplicação
 .get("/", pageLanding)
-.get("/publico/src/views/study.html", pageStudy)
-.get("/publico/src/views/give-classes.html", pageGiveClasses)
+.get("/study", pageStudy)
+.get("/give-classes.html", pageGiveClasses)
 .post("/save-classes", saveClasses)
 //start do servidor
 .listen(5500)
